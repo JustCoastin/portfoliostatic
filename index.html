@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <link href="./styles.css" type="text/css" rel="stylesheet"
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Mijn applicatie</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div>
+            <header>
+                <h1>Welcome to my portfolio!</h1>
+            </header>
+            <nav>
+                <ul>
+                    <li>Home</li>
+                    <li>About me</li>
+                    <li>Experience</li>
+                    <li>Contact</li>
+                </ul>
+            </nav>
+            <main>
+                <div id="page-home"class="my-page">
+                    <h2>Home pagina</h2>
+                    <div>
+                        <p>This is the home page of my portfolio</p>
+                        <p>All my projects are located on this page</p>
+                    </div>
+                </div>
+                <div id="page-experience" class="my-page">
+                    <h2>Project pagina</h2>
+                    <div>
+                        <p>This is the project page of my portfolio</p>
+                        <p>All my projects are located on this page</p>
+                    </div>
+                </div>
+            </main>
+            <script>
+              (async function() {
+              let { text } = await( await fetch(`/api/GetMessage`)).json();
+              document.querySelector('#name').textContent = text;
+              }())
+            </script>
+        </div>
+    </body>
+
+  </html>
+

@@ -1,0 +1,41 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+}
+
+html, body {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  background-color: black
+}
+
+main {
+  margin: auto;
+  width: 50%;
+  padding: 20px;
+}
+
+main > h1 {
+  text-align: center;
+  font-size: 3.5em;
+}
+
+.my-button{
+  background-color: transparent;
+  color:#24ffbd;
+  margin: 5px;
+  
+}
+h1,h2,p, ul {
+  color: white;
+}
+ul {
+  display: flex;
+  flex: row;  
+  color: #24ffbd;
+  list-style: none; 
+}
+li{
+  margin: 5px;
+}
